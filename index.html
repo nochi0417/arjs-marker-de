@@ -17,11 +17,31 @@
      <!-- 既成のHIROマーカーを使う例 --> 
       <a-marker preset="hiro"> 
       <!-- 原点に簡単な立方体を表示 --> 
-      <a-box position="0 0.5 0" depth="1" height="1" width="1" color="#4CC3D9">
-      </a-box>
-      <a-sphere position="1 1 0" radius="0.5" color="#EF2D5E">
-      </a-sphere>
-      <a-text value="Hello AR.js" position="-0.8 1.8 0" color="#fff">
+
+
+      <!-- 💄ピンクリップ（中央） -->
+      <a-cylinder position="0 0.75 -4" radius="0.3" height="1.5" color="#f8c9d4"></a-cylinder>
+      <a-cone position="0 1.6 -4" radius-bottom="0.3" radius-top="0.05" height="0.6" color="#e75480"></a-cone>
+
+      <!-- 🌕泡（ガラス玉） -->
+      <a-sphere position="0.8 1.4 -3.5" radius="0.7"
+                material="color: #ffffff; opacity: 0.25; transparent: true; metalness: 0.2; roughness: 0.1"></a-sphere>
+      <a-sphere position="-0.9 1.2 -4.2" radius="0.3"
+                material="color: #ffffff; opacity: 0.18; transparent: true; metalness: 0.2; roughness: 0.1"></a-sphere>
+      <a-sphere position="0.5 0.8 -5.0" radius="0.5"
+                material="color: #ffffff; opacity: 0.2; transparent: true; metalness: 0.2; roughness: 0.1"></a-sphere>
+      <a-sphere position="-0.4 1.8 -4.8" radius="0.4"
+                material="color: #ffffff; opacity: 0.15; transparent: true; metalness: 0.2; roughness: 0.1"></a-sphere>
+
+      <!-- 🌸フェイスパウダー -->
+      <a-cylinder position="-1.2 0.3 -4" radius="0.8" height="0.2" color="#f8cad7"></a-cylinder>
+      <a-cylinder position="-1.2 0.5 -4" radius="0.8" height="0.1" color="#ffe4ec" opacity="0.85"></a-cylinder>
+
+      <!-- 💗チーク -->
+      <a-cylinder position="1.2 0.3 -4" radius="0.6" height="0.2" color="#ffb6c1"></a-cylinder>
+      <a-cylinder position="1.2 0.5 -4" radius="0.6" height="0.1" color="#ffc0cb" opacity="0.9"></a-cylinder>
+
+  
       </a-text> 
     </a-marker>
       <!-- カメラ --> 
